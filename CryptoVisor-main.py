@@ -5,6 +5,7 @@ from datetime import date
 #only for btc
 def pro_gai(*args , **quad):
     ds = pa.read_csv("C:\\Users\\utepsilon1\\Desktop\\CryptoVisor-master\\Datasets\\btc.csv")
+    rows,columns = ds.shape
     avg_price = ds["price(USD)"].avg()
     #print(avg_price)
     today = date.today()
