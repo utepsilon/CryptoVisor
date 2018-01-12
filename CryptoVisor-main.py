@@ -6,10 +6,9 @@ from datetime import date
 def pro_gai(*args , **quad):
     ds = pa.read_csv("C:\\Users\\utepsilon1\\Desktop\\CryptoVisor-master\\Datasets\\btc.csv")
     rows,columns = ds.shape
-    avg_price = ds["price(USD)"].avg()
+    avg_price = ds["marketcap(USD)"].mean()
     #print(avg_price)
     today = date.today()
-    realtime_price = ds["date"][ds["date]==today]
     #unfinished 
     
     
