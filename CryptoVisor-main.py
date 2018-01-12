@@ -3,7 +3,7 @@ import tkinter as tk
 from tkinter import font  as tkfont 
 from datetime import date
 #only for btc
-def pro_gai(*args , **quad):
+def pro_gai(*args):
     ds = pa.read_csv("C:\\Users\\utepsilon1\\Desktop\\CryptoVisor-master\\Datasets\\btc.csv")
     rows,columns = ds.shape
     avg_price = ds["marketcap(USD)"].mean()
