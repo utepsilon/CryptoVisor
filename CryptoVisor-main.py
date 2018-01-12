@@ -1,5 +1,18 @@
+import pandas as pa
 import tkinter as tk                
 from tkinter import font  as tkfont 
+from datetime import date
+#only for btc
+def pro_gai(*args , **quad):
+    ds = pa.read_csv("C:\\Users\\utepsilon1\\Desktop\\CryptoVisor-master\\Datasets\\btc.csv")
+    avg_price = ds["price(USD)"].avg()
+    #print(avg_price)
+    today = date.today()
+    realtime_price = ds["date"][ds["date]==today]
+    #unfinished 
+    
+    
+
 
 
 class Engine(tk.Tk):
